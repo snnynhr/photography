@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+section::after {
+  content: '';
+  flex-grow: 10000;
+}
+.fluid div {
+  margin: 2px;
+  position: relative;
+  color: violet;
+}
+.fluid i{
+  display: block;
+}
+.fluid img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.h2 {
+  font-family: Roboto Condensed, sans-serif;
+}
