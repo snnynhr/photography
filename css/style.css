@@ -1117,9 +1117,11 @@ a {
       transform: translate(-50%, -50%); }
       .swiper-container .swiper-slide .image-wrap .image-info h2 {
         color: #fff; }
+    @media(min-width: 1200px) {
     .swiper-container .swiper-slide .image-wrap:hover:before {
       background: rgba(0, 0, 0, 0.4);
       content: ""; }
+    }
   .swiper-container .btn-outline-white {
     border-color: #fff;
     color: #fff;

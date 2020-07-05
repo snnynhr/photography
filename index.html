@@ -4,19 +4,43 @@
     <title>Sunny Nahar's Photography</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+    <link rel="canonical" href="https://snnynhr.github.io/photography"/>
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.critical.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/lightgallery.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preload" href="fonts/josefin-v16-300i.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/josefin-v16-400.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/josefin-v16-700.woff2" as="font" crossorigin>
+    <link rel="preload" href="images/YosemiteHalfDome-mobile.webp" as="image">
+    <style>
+        @font-face {
+          font-family: 'Josefin Sans';
+          font-style: italic;
+          font-weight: 300;
+          src: url(fonts/josefin-v16-300i.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: 'Josefin Sans';
+          font-style: normal;
+          font-weight: 400;
+          src: url(fonts/josefin-v16-400.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: 'Josefin Sans';
+          font-style: normal;
+          font-weight: 700;
+          src: url(fonts/josefin-v16-700.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
   </head>
   <body>
     <div class="site-wrap">
@@ -71,7 +95,7 @@
           </div>
         </div>
       </header>
-      <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+      <div class="container-fluid" data-aos="fade">
         <div class="swiper-container images-carousel">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -80,7 +104,7 @@
                   <h2 class="mb-3">Yosemite</h2>
                   <a href="yosemite.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
                 </div>
-                <img src="images/YosemiteHalfDome.jpg" alt="Image" loading="lazy">
+                <img srcset="images/YosemiteHalfDome-mobile.webp 800w, images/YosemiteHalfDome.jpg 2000w" src="images/YosemiteHalfDome-mobile.webp" alt="Yosemite Half Dome" loading="lazy">
               </div>
             </div>
             <div class="swiper-slide">
@@ -89,7 +113,7 @@
                   <h2 class="mb-3">Sequoia</h2>
                   <a href="sequoia.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
                 </div>
-                <img src="images/SequoiaGrove.jpg" alt="Image" loading="lazy">
+                <img srcset="images/SequoiaGrove-mobile.jpg 800w, images/SequoiaGrove.jpg 1576w" width="1576" height="2000" alt="Sequoia Grove" loading="lazy">
               </div>
             </div>
             <div class="swiper-slide">
@@ -98,7 +122,7 @@
                   <h2 class="mb-3">Oregon</h2>
                   <a href="oregon.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
                 </div>
-                <img src="images/OregonCraterLakeAngle.jpg" alt="Image" loading="lazy">
+                <img srcset="images/OregonCraterLakeAngle-mobile.webp 800w, images/OregonCraterLakeAngle.jpg 2000w" width="2000" height="1298" alt="Oregon Crater Lake" loading="lazy">
               </div>
             </div>
             <div class="swiper-slide">
@@ -107,7 +131,7 @@
                   <h2 class="mb-3">Lassen</h2>
                   <a href="lassen.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
                 </div>
-                <img src="images/LassenForestTrees.jpg" alt="Image" loading="lazy">
+                <img srcset="images/LassenForestTrees-mobile.jpg 800w, images/LassenForestTrees.jpg 2000w" width="2000" height="1333" alt="Lassen Forest Trees" loading="lazy">
               </div>
             </div>
             <div class="swiper-slide">
@@ -116,7 +140,7 @@
                   <h2 class="mb-3">Point Reyes</h2>
                   <a href="pointreyes.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
                 </div>
-                <img src="images/PointReyesCypressTrees.jpg" alt="Image" loading="lazy">
+                <img srcset="images/PointReyesCypressTrees-mobile.webp 800w, images/PointReyesCypressTrees.jpg 2000w" width="2000" height="1396" alt="Point Reyes Cypress Trees" loading="lazy">
               </div>
             </div>
           </div>
@@ -126,11 +150,11 @@
           <div class="swiper-scrollbar"></div>
         </div>
       </div>
-      <div class="footer py-5" style="padding-top: 2rem!important;">
+      <div class="footer py-5" id="footer">
         <div class="container-fluid">
           <p style="font-size:8pt;">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Images copyright &copy;<script>document.write(new Date().getFullYear());</script> Sunny Nahar, all rights reserved | <span class="emgen">Contact</span> | This website is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <span class="emgen"><a href="">Contact</a></span> | Images &copy;2020 Sunny Nahar | <a href="https://colorlib.com" target="_blank">Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>
@@ -145,18 +169,16 @@
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/picturefill.min.js"></script>
-    <script src="js/lightgallery-all.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/custom.js"></script>
     
     <script>
     $(document).ready(function(){
-    $('#lightgallery').lightGallery();
+    $('#footer').addClass('footervisible');
     });
     </script>
     

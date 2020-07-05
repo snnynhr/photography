@@ -24,3 +24,50 @@ section::after {
 .h2 {
   font-family: Roboto Condensed, sans-serif;
 }
+
+.footer {
+	padding-top: 0.3rem!important; 
+	padding-bottom: 0.0rem!important;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.footervisible {
+	visibility: visible;
+	visibility: visible;
+    opacity: 1;
+    /*transition-delay: 0.5s;*/
+    transition: visibility 0.8s, opacity 0.8s ease;
+    /*transition-duration: 0.8s;*/
+}
+
+@media(min-width: 1200px) { 
+	.footer {
+		padding-top: 0.5rem!important; 
+		padding-bottom: 0.0rem!important;
+	}
+}
+
+.footer p {
+	margin: 0px
+}
+
+.swiper-container {
+  height: calc(100vh - 100px); 
+}
+
+.swiper-container .swiper-slide .image-wrap:hover:before {
+	background: rgba(0, 0, 0, 0.);
+    content: "";
+}
+
+@media(min-width: 1200px) {
+  .swiper-container {
+    height: calc(100vh - 120px); 
+  }
+  .swiper-container .swiper-slide .image-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+  }
+}
+
