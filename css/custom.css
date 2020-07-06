@@ -31,34 +31,28 @@ section::after {
 	visibility: hidden;
 	opacity: 0;
 }
-
 .footervisible {
 	visibility: visible;
     opacity: 1;
     transition: visibility 0.8s, opacity 0.8s ease;
 }
-
 @media(min-width: 1200px) { 
 	.footer {
-		padding-top: 0.5rem!important; 
+		padding-top: 0.3rem!important; 
 		padding-bottom: 0.0rem!important;
 	}
 }
-
 .footer p {
 	padding-top: 5px;
 	margin: 0px;
 }
-
 .swiper-container {
   height: calc(100vh - 144px); 
 }
-
 .swiper-container .swiper-slide .image-wrap:hover:before {
 	background: rgba(0, 0, 0, 0.);
     content: "";
 }
-
 @media(min-width: 1200px) {
   .swiper-container {
     height: calc(100vh - 120px); 
@@ -68,4 +62,7 @@ section::after {
     content: "";
   }
 }
-
+.emgen {
+	cursor: pointer;
+	color: #20c997;
+}

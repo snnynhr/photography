@@ -416,8 +416,10 @@ a {
       display: block;
       position: relative;
       color: #212529; }
+    @media(min-width: 1200px) {
       .site-mobile-menu .site-nav-wrap a:hover {
         color: #20c997; }
+    }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
